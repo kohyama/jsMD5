@@ -16,9 +16,9 @@ jsMD5 is an implementation of [RFC 1321 - The MD5 Message-Digest Algorithm] (htt
 To use this do as below:
 
     var md5 = require('./md5');
-    var na = md5.digest(*array of numbers*);
+    var na = md5.digest(<array of numbers>);
     // na is an array of numbers
-    var str = md5.digest_s(*string*);
+    var str = md5.digest_s(<string>);
     // str is an string
 
 "array of numbers" is the array of unsigned integer of each bytes to digest or of each bytes of digested.
