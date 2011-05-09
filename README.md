@@ -21,7 +21,7 @@ To use this do as below:
     var str = md5.digest_s(<string>);
     // str is an string
 
-"array of numbers" is the array of unsigned integer of each bytes to digest or of each bytes of digested.
+"array of numbers" is an array of unsigned integer of each bytes to digest or of each bytes of digested.
 
 本ソフトゥアのライセンスは, 修正BSDライセンスとします.  
 
