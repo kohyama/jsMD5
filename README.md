@@ -5,11 +5,16 @@ jsMD5 is an implementation of [RFC 1321 - The MD5 Message-Digest Algorithm] (htt
 
 To use this do as below:
 
-    var md5 = require('./md5');
-    var na = md5.digest(<array of numbers>);
+    var md5 = require('./md5')
+      , na
+      , str
+      ;
+
+    na = md5.digest(<array of numbers>);
     // na is an array of numbers
-    var str = md5.digest_s(<string>);
-    // str is an string
+
+    str = md5.digest_s('The quick brown fox jumped over the lazy dog.');
+    // str === '5c6ffbdd40d9556b73a21e63c3e0e904'
 
 "array of numbers" is an array of unsigned integer of each bytes to digest or of each bytes of digested.
 
@@ -22,10 +27,15 @@ This software license is the New BSD License.
 
 利用するには
 
-    var md5 = require('./md5'); 
-    var na = md5.digest(数値の配列); 
+    var md5 = require('./md5')
+      , na
+      , str
+      ; 
+
+    na = md5.digest(数値の配列); 
     // na は数値配列
-    var str = md5.digest_s(文字列);
+
+    str = md5.digest_s(文字列);
     // str は文字列
 
 のようにします.
